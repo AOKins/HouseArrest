@@ -1,0 +1,115 @@
+/*
+    Main style document that sets the overall appearence of the html files
+    COLORS ARE WIP
+*/
+
+/*Main Style of the body content, padding to offset down to not overlap with nav bar*/
+body {
+    padding-top: 48px;
+    padding-left: 30px;
+}
+
+img#logo {
+    height: 38px;
+}
+
+/*Main style of position and size of the nav bar that is fixed to top of the window*/
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid darkgrey;
+}
+
+
+/*Styles the overall list of links items in the nav bar, setting font size and height for them.  Removes the auto list styles*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    height: 100%;
+    font-size: 30px;
+}
+
+/*Styles each item to take the entire height of the list and be inline with each other as opposed to vertically*/
+nav ul li {
+    display: block;
+    float: left;
+    height: 100%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+/*Styling the logo image in the nav bar, setting to be in between top and bottom with total size being 38x38 pixels*/
+nav ul li img#logo {
+    display: inline;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 0;
+    /*Giving it a background color to stand out more where transparent*/
+    background-color: black;
+    height: 38px;
+    width: 38px;
+}
+
+/*The link items are also inline and given no auto text decoration, made center, and moved/padded to be more lined up in an aesthetically pleasing way*/
+nav ul li a {
+    top: 0;
+    left: 0;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    height: 38px;
+    color: blue;
+}
+
+/*For links in the nav bar that are being hovered over by the user and are classifed as not active (will move to different page) be colored up behind them*/
+nav ul li a:hover:not(.active) {
+    background-color: grey;
+}
+
+/*For links that are classifed as active (current page) they are given seperate color to designate from links to other pages*/
+nav ul li a.active {
+    color: red;
+}
+
+/*Styles for the screenshot list/gallery */
+ul#screenshotsList {
+    list-style-type:none;
+}
+
+ul#screenshotsList li {
+    display:block;
+}
+ul#screenshotsList li img {
+    max-width: 500px;
+    max-height: 500px;
+}
+/* Style for Portrait images in about page */
+
+.about_person .portrait {
+    display: block;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 25px;
+    text-align:center;
+}
+
+/*Sets max dimensions for the image inside the portrait div item */
+.about_person .portrait img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+
+/*Sets properties */
+.about_person {
+    display: inline-block;
+    width: 80%;
+    padding: 15px;
+    margin: 5px;
+}
